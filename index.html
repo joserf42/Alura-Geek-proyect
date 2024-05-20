@@ -5,10 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="">
   <link rel="stylesheet" href="./style/reset.css">
   <link rel="stylesheet" href="./style/style.css">
-  <link rel="stylesheet" href="./css/card/style.css">
   <script src="./main.js" defer></script>
   <title>Challenge AluraGeek</title>
 </head>
@@ -21,17 +19,18 @@
   <main class="main-container">
     <section class="products-section">
       <h1>MIS PRODUCTOS:</h1>
-      <div data-product class="products-container">
-        
+      <div class="products-container" data-product>
+          
+        <!-- Aquí van las tarjetas de productos -->
         <div class="card">
           <div class="img-container">
             <img src="./assets/gameBoy.png" alt="img">
           </div>
 
           <div class="card-container--info">
-            <p>gameBoy</p>
+            <p>gameBoy1</p>
+            <p>$ 100</p>
             <div class="card-container--value">
-              <p>$ 100</p>
               <button class="delete-button" data-id="${id}">
                 <a href="https://www.flaticon.es/iconos-gratis/eliminar" title="eliminar iconos"></a><img src="https://www.flaticon.es/iconos-gratis/eliminar"  alt="borrar"> 
               </button>
@@ -45,9 +44,9 @@
           </div>
 
           <div class="card-container--info">
-            <p>gameBoy</p>
+            <p>gameBoy2</p>
+            <p>$ 100</p>
             <div class="card-container--value">
-              <p>$ 100</p>
               <button class="delete-button" data-id="${id}">
                 <a href="https://www.flaticon.es/iconos-gratis/eliminar" title="eliminar iconos"></a><img src="https://www.flaticon.es/iconos-gratis/eliminar"  alt="borrar"> 
               </button>
@@ -61,9 +60,9 @@
           </div>
 
           <div class="card-container--info">
-            <p>gameBoy</p>
+            <p>gameBoy3</p>
+            <p>$ 100</p>
             <div class="card-container--value">
-              <p>$ 100</p>
               <button class="delete-button" data-id="${id}">
                 <a href="https://www.flaticon.es/iconos-gratis/eliminar" title="eliminar iconos"></a><img src="https://www.flaticon.es/iconos-gratis/eliminar"  alt="borrar"> 
               </button>
@@ -77,9 +76,42 @@
           </div>
 
           <div class="card-container--info">
-            <p>gameBoy</p>
+            <p>gameBoy4</p>
+            <p>$ 100</p>
             <div class="card-container--value">
-              <p>$ 100</p>
+              <button class="delete-button" data-id="${id}">
+                <a href="https://www.flaticon.es/iconos-gratis/eliminar" title="eliminar iconos"></a><img src="https://www.flaticon.es/iconos-gratis/eliminar"  alt="borrar"> 
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="img-container">
+            <img src="./assets/gameBoy.png" alt="img">
+          </div>
+
+          <div class="card-container--info">
+            <p>gameBoy5</p>
+            <p>$ 100</p>
+            <div class="card-container--value">
+              <button class="delete-button" data-id="${id}">
+                <a href="https://www.flaticon.es/iconos-gratis/eliminar" title="eliminar iconos"></a><img src="https://www.flaticon.es/iconos-gratis/eliminar"  alt="borrar"> 
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="img-container">
+            <img src="./assets/gameBoy.png" alt="img">
+          </div>
+
+          <div class="card-container--info">
+            <p>gameBoy8</p>
+            <p>$ 100</p>
+            <div class="card-container--value">
+              
               <button class="delete-button" data-id="${id}">
                 <a href="https://www.flaticon.es/iconos-gratis/eliminar" title="eliminar iconos"></a><img src="https://www.flaticon.es/iconos-gratis/eliminar"  alt="borrar"> 
               </button>
@@ -90,20 +122,20 @@
       </div>
     </section>
 
-    <section class="agregar-section">
-      <h1>AGREGAR</br> PRODUCTO:</h1>
-      <form action="form-container" data-form>
+    <section class="add-section">
+      <h1>AGREGAR<br>PRODUCTO:</h1>
+      <form class="form-container" data-form>
         <input data-name type="text" placeholder="nombre...">
         <input data-price type="text" placeholder="Precio...">
         <input data-image type="text" placeholder="imagen...">
-        
         <div class="botton-container">
-          <button tipe="submit" class="button-submit" id="button">Enviar...</button>
-          <button tipe="reset" class="button-clear" id="button">Limpiar...</button>
+          <button type="submit" class="button-submit" id="button">Enviar...</button>
+          <button type="reset" class="button-clear" id="button">Limpiar...</button>
         </div>
       </form>
     </section>
   </main>
+
   <footer class="footer-container">
     <div>
       <img class="logo" src="./assets/logoAluraGeek.png" alt="logo AluraGeek">
@@ -113,11 +145,9 @@
         challenge desarrollado por José Daniel Rojas Fernández<strong class="app__title-strong"> &copy;Alura
           2024</strong>
       </p>
-
-      <p>
     </div>
   </footer>
   <script type="module" src="./js/controlers/main.js"></script>
-
 </body>
+
 </html>

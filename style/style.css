@@ -1,0 +1,131 @@
+:root {
+    --color-primary: ;
+    --color-secondary: white;
+    --main-bg-color: linear-gradient(180deg, #2d1ff8 0%, #3277d0 48.44%, #e7ecf1 100%);
+    
+    --fundo-card-timer: rgba(20, 68, 128, 0.30);
+    --lils: #B872FF;
+    --linear-botes: linear-gradient(180deg, #B872FF 0%, #144480 100%);
+}
+
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+html {
+    background: var(--main-bg-color);
+    min-height: 100vh;
+    font-size: 10px;
+}
+h1{
+    font-size: 2.5rem;
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    background: var(--color-secondary);
+}
+.main-container {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.products-container{
+    display: flex;
+
+}
+.products-container::-webkit-scrollbar-track {
+    background: var(--color-secondary);
+    
+    
+}
+.card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    background-color: #03318C;
+    color: white;
+    width: calc(100%/4);
+    padding: 10px;
+    border-radius: 20px;
+    border: 3px solid transparent;
+    margin: 0 4px;
+    
+}
+.card-container--info {
+    display: flex;
+    flex-direction: column;
+}
+.delete-button {
+    align-items: flex-end;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+}
+input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 33px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.botton-container {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 20px;
+}
+
+.button-submit {
+    width: 130px;
+    height: 33px;
+    background-color: var(--color-primary);
+    border-radius: 20px;
+    margin: 3px 0;
+}
+
+.button-clear {
+    width: 130px;
+    border-radius: 20px;
+    margin: 3px 0;
+}
+
+.footer-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background: var(--color-secondary);
+}
+
+.app__footer-text {
+    color: #03318C;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+/* Para Tablets */
+@media (max-width: 1024px) and (min-width: 768px) {
+    
+}
+
+/* Para Celulares */
+@media (max-width: 767px) {
+    
+
+    
+}

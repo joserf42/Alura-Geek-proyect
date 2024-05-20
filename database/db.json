@@ -1,0 +1,17 @@
+{
+    "products": [
+        {
+            "name": "consola Game Boy",
+            "price": 9.99,
+            "image": "",
+            "id": 1
+        },
+        {
+            "name": "consola Game Boy Color",
+            "price":9.98,
+            "image": "https://d2r9epyceweg5n.cloudfront.net/stores/197/352/products/20210817_132214162_ios1-cb6bb4ba553647a3c816292177798111-1024-1024.jpg",
+            "id": 2
+
+        }
+    ]
+}

@@ -1,11 +1,11 @@
 const productList = () => {
-    return fetch("http://localhost")
+    return fetch("http://localhost:3000/products")
         .then((res) => res.json())
         .catch((err) => console.log(err));
 }
 
 const createProducts = (name, price, Image) => {
-    return fetch("http://localhost", {
+    return fetch("http://localhost:3000/products", {
         method: "POST",
         headers: {
             "Content-type": "application/json",

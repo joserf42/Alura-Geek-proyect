@@ -1,4 +1,4 @@
-import { servicesProducts } from "../service/products-service.js";
+import { servicesProducts } from "../services/products-services.js";
 
 
 const productContainer = document.querySelector("[data-product]");
@@ -10,19 +10,20 @@ function createCard (name, price, image, id) {
 
     card.innerHTML = `
     <div class="img-container">
-        <img src="${image}" alt="${name}">
+        <img src="${image}" alt="${name}"> 
     </div>
 
     <div class="card-container--info">
         <p>${name}</p>
         <div class="card-container--value">
             <p>$ ${price}</p>
-            <button class="delete-button" data-id="${id}">
-                <img src="" alt="Eliminar">
+            <button type="button" class="delete-button" data-id="${id}">
+                <img class="img-delete" src="./assets/btnDelete.png" alt="Eliminar">
             </button>
         </div>
     </div>
-    `;
+    ` 
+
 
     card.querySelector(".delete-button").addEventListener("click", (event) => {
         const id = event.target.closest(".delete-button").dataset.id;
@@ -42,12 +43,25 @@ const render = async () => {
     try {
         const listProducts = await servicesProducts.productList();
         listProducts.forEach(product => {
-            createCard(product.name, product.price, product.image, product.id);
+            productContainer.appendChild(
+                createCard(
+                    product.name, 
+                    product.price, 
+                    product.image, 
+                    product.id
+                )
+            )        
         });
     } catch (error) {
-        console.error(error);
+        console.log(error);
     }
 };
+
+render();
+
+
+
+ // formulario
 
 form.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -57,49 +71,7 @@ form.addEventListener("submit", (event) => {
     const image = document.querySelector("[data-image]").value;
 
     servicesProducts.createProducts(name, price, image)
-        .then(() => {
-            // Aquí puedes agregar código para actualizar la vista o manejar la respuesta
-            console.log('Producto creado con éxito');
-            render(); // Esto volverá a renderizar la lista de productos con el nuevo producto añadido
-        })
-        .catch((err) => console.error(err));
+        .then((res) => console.log(res))
+        .catch((err) => console.log(err));
+        render(); // Esto volverá a renderizar la lista de productos con el nuevo producto añadido
 });
-
-render();
-    /*
-    productContainer.appendChild(card);
-    return card;
-
-}
-
-const render = async () => {
-    try {
-        const listProducts = await servicesProducts.productList();
-        
-        listProducts.forEach(product => {
-            productContainer.appendChild(
-                createCard(product.name, product.price, product.image, product.id)
-                
-            )
-            });
-    } catch (error) {
-        console.log(error)
-        
-    }
-
-};
-
-form.addEventListener("submit", (event) => {
-    event.preventDefault();
-
-    const name = document.querySelector("[data-name]").value;
-    const price = document.querySelector("[data-price]").value;
-    const image = document.querySelector("[data-image]").value;
-
-    servicesProducts
-    .createProducts(name, price, image)
-    .then((res) => console.log(res))
-    .catch((err) => console.log(err));
-})
-render();
-*/

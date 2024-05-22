@@ -94,6 +94,10 @@
     border-radius: 10px;
     
   }
+  .delete-button, .img-delete{
+    width: 3rem;
+    border-radius: 50%;
+  }
   
   .botton-container {
     width: 100%;

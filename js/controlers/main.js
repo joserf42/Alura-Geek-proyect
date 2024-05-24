@@ -1,6 +1,5 @@
 import { servicesProducts } from "../services/products-services.js";
 
-
 const productContainer = document.querySelector("[data-product]");
 const form = document.querySelector("[data-form]");
 
@@ -14,17 +13,18 @@ function createCard (name, price, image, id) {
     </div>
 
     <div class="card-container--info">
+        <div class="card-container--parrafo"
         <p>${name}</p>
+        <p>$ ${price}</p>
+        </div>
         <div class="card-container--value">
-            <p>$ ${price}</p>
+            
             <button type="button" class="delete-button" data-id="${id}">
                 <img class="img-delete" src="./assets/btnDelete.png" alt="Eliminar">
             </button>
         </div>
     </div>
     ` 
-
-
     card.querySelector(".delete-button").addEventListener("click", (event) => {
         const id = event.target.closest(".delete-button").dataset.id;
         servicesProducts.deleteProducts(id)

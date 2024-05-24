@@ -1,52 +1,73 @@
 {
   "product": [
-    {
-      "name": "X12 Plus",
-      "price": "$4500.00",
-      "image": "https://www.cibermoda.mx/assets/images/craft_images/productos/Consola-Retro-Portatil-X12-Plus-pantalla-7-pulgadas-color-rojo-azul-joystick.webp",
-      "id": "1"
-    },
-    {
-      "id": "71e9",
-      "name": "X12 Plus",
-      "price": "",
-      "Image": ""
-    },
-    {
-      "id": "0e99",
-      "name": "X12 Plus",
-      "price": "",
-      "Image": ""
-    },
-    {
-      "id": "2393",
-      "name": "X12 Plus",
-      "price": "",
-      "Image": ""
-    },
-    {
-      "id": "498d",
-      "name": "X12 Plus",
-      "price": "",
-      "Image": ""
-    },
-    {
-      "id": "e506",
-      "name": "X12 Plus",
-      "price": "",
-      "Image": ""
-    },
-    {
-      "id": "d076",
-      "name": "X12 Plus",
-      "price": "",
-      "Image": ""
-    },
-    {
-      "id": "ab11",
-      "name": "X12 Plus",
-      "price": "",
-      "Image": ""
-    }
+      {
+          "name": "Seiya de Pegaso",
+          "price": "$80.00",
+          "image": "https://resources.claroshop.com/medios-plazavip/mkt/65467fc8a751e_cab_seiya-removebg-previewpng.jpg?scale=500&qlty=75",
+          "id": 1
+                                  
+      },
+      {
+          "name": "Shiryu de Dragón",
+          "price": "$80.00",
+          "image": "https://resources.claroshop.com/medios-plazavip/mkt/65467f8adb844_cab_shiryu-removebg-previewpng.jpg?scale=500&qlty=75",
+          "id": 2
+      },
+      {
+          "name": "Ikki de Fénix",
+          "price": "$80.00",
+          "image": "https://resources.claroshop.com/medios-plazavip/mkt/65467f93dd387_cab_ikki-removebg-previewpng.jpg?scale=500&qlty=75",
+          "id": 3
+      },
+      {
+          
+          "name": "Shun de Andrómeda",
+          "price": "$80.00",
+          "image": "https://resources.claroshop.com/medios-plazavip/mkt/65467f9a54ff5_cab_shun-removebg-previewpng.jpg?scale=500&qlty=75",
+          "id": 4
+      },
+      {
+          "name": "Hyoga de Cisne",
+          "price": "$80.00",
+          "image": "https://resources.claroshop.com/medios-plazavip/mkt/65467fc548bb8_cab_hyoga-removebg-previewpng.jpg?scale=500&qlty=75",
+          "id": 5
+      },
+      {
+          "name": "Funko Aquarius Hyoga",
+          "price": "$80.00",
+          "image": "https://http2.mlstatic.com/D_NQ_NP_742123-MLU75128520435_032024-O.webp",
+          "id": 6
+      },
+      {
+          "name": "Funko Dragon Shiryu",
+          "price": "$80.00",
+          "image": "https://http2.mlstatic.com/D_NQ_NP_755481-MLM44298849218_122020-O.webp",
+          "id": 7
+      },
+      {
+          "name": "Funko Leo Ikki",
+          "price": "$80.00",
+          "image": "https://http2.mlstatic.com/D_NQ_NP_602916-MLU74162441281_012024-O.webp",
+          "id": 8
+      },
+      {
+          "name": "Funko Libra Shiryu",
+          "price": "$80.00",
+          "image": "https://http2.mlstatic.com/D_NQ_NP_782457-MLU73310859589_122023-O.webp",
+          "id": 9
+      },
+      {
+          "name": "Funko Virgo Shun",
+          "price": "$80.00",
+          "image": "https://http2.mlstatic.com/D_NQ_NP_716548-MCO76141889370_052024-O.webp",
+          "id": 10
+      },
+      {
+          "name": "Funko Saint Seiya",
+          "price": "$80.00",
+          "image": "https://http2.mlstatic.com/D_NQ_NP_730476-MCO46572676877_062021-O.webp",
+          "id": 11
+      }
+      
   ]
 }

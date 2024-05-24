@@ -1,196 +1,333 @@
 :root {
-    --color-primary: #000000;
-    --color-secondary: white;
-    --main-bg-color: linear-gradient(180deg, #36a628 0%, #6aa024 48.44%, #ffffff 100%);
-    --fundo-card-timer: rgba(233, 26, 57, 0.3);
-    --red-clear: #ca1a14;
-    --linear-botes: linear-gradient(180deg, #09d609b4 0%, #7f8713 100%);
-  }
-  
-  * {
-    box-sizing: border-box;
-    max-width: 100%;
-  }
-  
-  html {
-    background: var(--main-bg-color);
-    font-size: 10px;
-  }
-  
-  h1 {
-    font-size: 2.5rem;
-    margin: 3rem 0;
-    text-align: center;
-    font-weight: 700;
-  }
-  
-  .header {
-    display: flex;
-    justify-content: center;
-    background: var(--color-secondary);
-  }
-  
-  main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 77px;
-  }
-  
-  /* Sección de productos */
-  .products-section {
-    display: flex;
-    flex-direction: column;
-    width: 45%;
-  }
-  
-  .products-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    height: 150px
-  }
-  
-  .products-container::-webkit-scrollbar-track {
-    background: var(--color-secondary);
-  }
-  
-  .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #8c1703;
-    color: white;
-    width: calc(33.33% - 14px); /* Ancho de las tarjetas ajustado */
-    padding: 10px;
-    border-radius: 20px;
-    border: 3px solid transparent;
-  }
-  
-  .card-container--info {
-    text-align: center;
-  }
-  
-  .delete-button {
-    cursor: pointer;
-  }
-  
-  /* Sección de formulario */
+  --color-primary: #000000;
+  --color-secondary: white;
+  --main-bg-color: linear-gradient(180deg, #36a628 0%, #6aa024 48.44%, #ffffff 100%);
+  --fundo-card-timer: rgba(233, 26, 57, 0.3);
+  --red-clear: #ca1a14;
+  --linear-botes: linear-gradient(180deg, #09d609b4 0%, #7f8713 100%);
+}
+
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+html {
+  background: var(--main-bg-color);
+  font-size: 10px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 3rem 0;
+  text-align: center;
+  font-weight: 700;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  background: var(--color-secondary);
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 77px;
+}
+
+/* Sección de productos */
+.products-section {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 95%;
+  height: 60rem;
+  padding: 10px;
+  overflow: scroll;
+  border: 1px solid #36a628;
+  justify-content: space-evenly;
+}
+
+.products-container::-webkit-scrollbar-track {
+  background: var(--color-secondary);
+
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #8c1703;
+  color: white;
+  width: calc(33.33% - 14px);
+  /* Ancho de las tarjetas ajustado */
+  padding: 10px;
+  border-radius: 20px;
+  border: 3px solid transparent;
+
+}
+
+.card-container--info {
+  text-align: center;
+}
+
+.img-container {
+  width: 50%;
+}
+
+.delete-button {
+  cursor: pointer;
+}
+
+/* Sección de formulario */
+.add-section {
+  width: 45%;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 8px 60px;
+}
+
+input {
+  width: 100%;
+  height: 33px;
+  margin: 20px 0;
+  border-radius: 10px;
+
+}
+
+.delete-button,
+.img-delete {
+  width: 3rem;
+  border-radius: 50%;
+}
+
+.botton-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+.button-submit,
+.button-clear {
+  width: 110px;
+  height: 33px;
+  border-radius: 20px;
+  cursor: pointer;
+  justify-content: space-between;
+  transition: 1s all;
+}
+
+.button-submit {
+  background-color: var(--color-secondary);
+}
+
+.button-submit:hover {
+  background: var(--linear-botes);
+  transform: scale(1.1);
+}
+
+.button-clear {
+  background-color: var(--color-secondary);
+}
+
+.button-clear:hover {
+  background: var(--red-clear);
+  transform: scale(1.1);
+}
+
+.footer-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-secondary);
+  margin: 1rem 0;
+}
+
+.app__footer-text {
+  color: #000000;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.app__title-strong {
+  font-weight: 700;
+}
+
+
+/*  escritorios  */
+@media (max-width: 1024px) {
+
+  .products-section,
   .add-section {
     width: 45%;
   }
-  
+
+  .card {
+    width: calc(40% - 10px);
+    /* Ancho de las tarjetas ajustado para Tabletas */
+  }
+
+  .footer-container {
+    height: 120px;
+  }
+}
+
+/* Tabletas  */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.1rem;
+  }
+
+  .main-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 0;
+    align-items: flex-start;
+  }
+
+  .products-section {
+    width: 60%;
+    height: 526px;
+  }
+
+  .add-section {
+    width: 40%;
+  }
+
+  .form-container {
+    width: 100%;
+    margin: 0;
+    padding: 8px;
+  }
+  .button-submit,
+  .button-clear {
+    width: 85px;
+
+  }
+
+
+  .products-container {
+    display: flex;
+    flex-direction: column;
+    
+    flex-wrap: wrap;
+    height: 445px;
+    padding: 2px;
+    margin: 0;
+
+  }
+
+
+  .card {
+    display: flex;
+    width: calc(50% - 10px);
+    /* Ancho de las tarjetas ajustado para Tabletas */
+    height: 190px;
+    justify-content: space-around;
+
+  }
+}
+
+/* Móviles  */
+@media (max-width: 430px) {
+  .header {
+    padding: 20px 0;
+  }
+
+  .main-container {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0 4px;
+  }
+
+  .products-section {
+    width: 100%;
+    height: 488px;
+
+  }
+
+  .products-container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 400px;
+    width: 600px;
+    padding: 2px;
+    margin: 0;
+    overflow-y: auto;
+
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: calc(45% - 1px);
+    /* Ancho de las tarjetas ajustado para móviles  */
+    height: 190px;
+    justify-content: space-around;
+  }
+
+  .card-container--info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-container--parrafo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start
+  }
+
+  .card-container--value {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+  }
+
+  .delete-button,
+  .img-delete {
+    display: flex;
+    align-items: end;
+  }
+
+  .button-submit,
+  .button-clear {
+    display: flex;
+    width: 80px;
+  }
+
+  /* section form */
+
+  .add-section {
+    width: 100%;
+    padding: 40px;
+  }
+
   .form-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 8px 60px;
+    margin: 8px 17px;
   }
-  
-  input {
-    width: 100%;
-    height: 33px;
-    margin: 20px 0;
-    border-radius: 10px;
-    
-  }
-  .delete-button, .img-delete{
-    width: 3rem;
-    border-radius: 50%;
-  }
-  
-  .botton-container {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    
-    
-  }
-  
-  .button-submit,
-  .button-clear {
-    width: 110px;
-    height: 33px;
-    border-radius: 20px;
-    cursor: pointer;
-    justify-content: space-between;
-    transition: 1s all;
-  }
-  
-  .button-submit {
-    background-color: var(--color-secondary);
-  }
-  .button-submit:hover {
-    background: var(--linear-botes);
-    transform: scale(1.1);
-  }
-  .button-clear {
-    background-color: var(--color-secondary);
-  }
-  .button-clear:hover {
-    background: var(--red-clear);
-    transform: scale(1.1);
-    }
-  
-  .footer-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: var(--color-secondary);
-    margin: 1rem 0;
-  }
-  
-  .app__footer-text {
-    color: #000000;
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%;
-  }
-  .app__title-strong {
-    font-weight: 700;
-  }
-  
-  /* Tabletas y escritorios */
-  @media (max-width: 1024px) and (min-width: 768px) {
-    .products-section,
-    .add-section {
-      width: 45%;
-      
-    }
-    .footer-container {
-      height: 120px;
-    }
-  }
-  
-  /* Móviles */
-  @media (max-width: 767px) {
-    main {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .products-section,
-    .add-section {
-      width: 90%;
-    }
-  
-    .card {
-      width: calc(50% - 10px); /* Ancho de las tarjetas ajustado para móviles */
-    }
-  }
-  
-  /* Móviles pequeños */
-  @media (max-width: 430px) {
-    .card {
-      width: 100%; /* Ancho de las tarjetas ajustado para móviles pequeños */
-    }
-    .button-submit,
-    .button-clear {
-      width: 80px;
-    }
-  }
+}

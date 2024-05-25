@@ -80,7 +80,11 @@ main {
 }
 
 .img-container {
-  width: 50%;
+  display: flex;
+  width: 70%;
+  height: 150px;
+  align-items: center;
+  
 }
 
 .delete-button {
@@ -179,13 +183,17 @@ input {
 
   .products-section,
   .add-section {
-    width: 45%;
+    width: 50%;
   }
-
   .card {
-    width: calc(40% - 10px);
+    display: flex;
+    width: calc(50% - 10px);
     /* Ancho de las tarjetas ajustado para Tabletas */
+    height: 190px;
+    justify-content: space-around;
+
   }
+  
 
   .footer-container {
     height: 120px;

@@ -3,6 +3,7 @@ const productList = () => {
         .then((res) => res.json())
         .catch((err) => console.log(err));
 };
+
 //funcion createProducts crear productos
 
 const createProducts = (name, price, Image) => {
@@ -21,7 +22,7 @@ const createProducts = (name, price, Image) => {
     .catch((err) => console.log(err));
 }
 
-//funcion deleteProducts borrar productos
+//funcion deleteProducts-borrar productos
 
 const deleteProducts = (id) => {
     return fetch(`http://localhost:3000/product/${id}`, {

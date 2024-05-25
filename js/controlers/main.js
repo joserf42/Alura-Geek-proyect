@@ -3,6 +3,8 @@ import { servicesProducts } from "../services/products-services.js";
 const productContainer = document.querySelector("[data-product]");
 const form = document.querySelector("[data-form]");
 
+// Función createCard crea una nueva tarjeta de producto
+
 function createCard (name, price, image, id) {
     const card = document.createElement("div");
     card.classList.add("card");
@@ -27,7 +29,7 @@ function createCard (name, price, image, id) {
     ` 
     card.querySelector(".delete-button").addEventListener("click", (event) => {
         const id = event.target.closest(".delete-button").dataset.id;
-        servicesProducts.deleteProducts(id)
+        servicesProducts.deleteProducts(id) //eliminar el producto
             .then(() => {
                 card.remove();
                 console.log(`Producto con id \${id} eliminado`);
@@ -59,9 +61,7 @@ const render = async () => {
 
 render();
 
-
-
- // formulario
+// formulario
 
 form.addEventListener("submit", (event) => {
     event.preventDefault();

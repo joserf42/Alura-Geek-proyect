@@ -31,34 +31,10 @@
       "id": "5"
     },
     {
-      "name": "Funko Aquarius Hyoga",
+      "id": "db83",
+      "name": "Seiya de Pegaso",
       "price": "$80.00",
-      "image": "https://http2.mlstatic.com/D_NQ_NP_742123-MLU75128520435_032024-O.webp",
-      "id": "6"
-    },
-    {
-      "name": "Funko Dragon Shiryu",
-      "price": "$80.00",
-      "image": "https://http2.mlstatic.com/D_NQ_NP_755481-MLM44298849218_122020-O.webp",
-      "id": "7"
-    },
-    {
-      "name": "Funko Leo Ikki",
-      "price": "$80.00",
-      "image": "https://http2.mlstatic.com/D_NQ_NP_602916-MLU74162441281_012024-O.webp",
-      "id": "8"
-    },
-    {
-      "name": "Funko Virgo Shun",
-      "price": "$80.00",
-      "image": "https://http2.mlstatic.com/D_NQ_NP_716548-MCO76141889370_052024-O.webp",
-      "id": "10"
-    },
-    {
-      "name": "Funko Saint Seiya",
-      "price": "$80.00",
-      "image": "https://http2.mlstatic.com/D_NQ_NP_730476-MCO46572676877_062021-O.webp",
-      "id": "11"
+      "Image": "https://resources.claroshop.com/medios-plazavip/mkt/65467fc8a751e_cab_seiya-removebg-previewpng.jpg?scale=500&qlty=75"
     }
   ]
 }

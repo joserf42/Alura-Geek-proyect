@@ -1,0 +1,141 @@
+/* Sección de productos */
+.products-section {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 95%;
+    height: 60rem;
+    padding: 10px;
+    overflow: scroll;
+    border: 1px solid #36a628;
+    justify-content: space-evenly;
+}
+
+
+.products-container::-webkit-scrollbar-track {
+    background: var(--color-secondary);
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #8c1703;
+    color: white;
+    width: calc(45% - 14px);
+    /* Ancho de las tarjetas ajustado */
+    padding: 10px;
+    border-radius: 20px;
+    border: 3px solid transparent;
+
+}
+.img-container {
+    display: flex;
+    width: 80%;
+    height: 150px;
+    align-items: center;
+    
+
+}
+.card-container--info {
+    text-align: center;
+}
+.card-container--parrafo {
+    text-align: start;
+    margin-top: 8px;
+}
+.card-container--value {
+    text-align: end;
+}
+
+
+.delete-button {
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+
+    .products-section {
+        display: flex;
+    }
+    .add-section {
+        width: 50%;
+    }
+
+    
+    
+}
+
+@media (max-width: 768px) {
+    .products-section {
+        width: 60%;
+        height: 526px;
+    }
+
+    .card {
+        display: flex;
+        width: calc(50% - 10px); /* Ancho de las tarjetas ajustado para Tabletas */
+        height: 190px;
+        justify-content: space-around;
+
+    }
+}
+/* Estilos base para móviles */
+@media (max-width: 430px) {
+    .products-section {
+        width: 100%;
+        height: 488px;
+    
+      }
+    
+      .products-container {
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 400px;
+        width: 600px;
+        padding: 2px;
+        margin: 0;
+        overflow-y: auto;
+    
+      }
+    
+      .card {
+        display: flex;
+        flex-direction: column;
+        width: calc(45% - 1px); /* Ancho de las tarjetas ajustado para móviles  */
+        height: 190px;
+        justify-content: space-around;
+      }
+    
+      .card-container--info {
+        display: flex;
+        flex-direction: column;
+      }
+    
+      .card-container--parrafo {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start
+      }
+    
+      .card-container--value {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    
+      }
+    
+      .delete-button,
+      .img-delete {
+        display: flex;
+        align-items: end;
+      }
+}

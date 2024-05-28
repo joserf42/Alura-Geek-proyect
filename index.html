@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style/reset.css">
   <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" href="./style/footer/footer.css">
+  <link rel="stylesheet" href="./style/productos/productos.css">
+  <link rel="stylesheet" href="./style/formulario/formulario.css">
   <script type="module" src="./js/controlers/main.js" defer ></script>
   <title>Challenge AluraGeek</title>
 </head>
@@ -17,6 +20,7 @@
   </header>
 
   <main class="main-container">
+    <!-- sección productos -->
     <section class="products-section">
       <h1>MIS PRODUCTOS:</h1>
       <div data-product class="products-container">
@@ -26,7 +30,7 @@
 
       </div>
     </section>
-
+    <!-- Sección Formulario -->
     <section class="add-section">
       <h1>AGREGAR<br>PRODUCTO:</h1>
       <form class="form-container" data-form>
@@ -34,8 +38,8 @@
         <input data-price type="text" placeholder="Precio...">
         <input data-image type="text" placeholder="imagen...">
         <div class="botton-container">
-          <button type="submit" class="button-submit" id="button">Enviar...</button>
-          <button type="reset" class="button-clear" id="button">Limpiar...</button>
+          <button type="submit" class="button-submit" >Enviar...</button>
+          <button type="reset" class="button-clear" >Limpiar...</button>
         </div>
       </form>
     </section>
